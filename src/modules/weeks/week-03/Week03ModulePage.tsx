@@ -23,6 +23,7 @@ import { NextWeekConnectionSection } from "./sections/NextWeekConnectionSection"
 import { ObjectivesSection } from "./sections/ObjectivesSection";
 import { OrderingSection } from "./sections/OrderingSection";
 import { OrganizationSection } from "./sections/OrganizationSection";
+import { PracticalExamSection } from "./sections/PracticalExamSection";
 import { PreviousWeekConnectionSection } from "./sections/PreviousWeekConnectionSection";
 import { ProcessDefinitionSection } from "./sections/ProcessDefinitionSection";
 import { ProcessMapSection } from "./sections/ProcessMapSection";
@@ -84,6 +85,7 @@ export function Week03ModulePage() {
       <SummarySection />
       <KeyIdeasSection />
       <NextWeekConnectionSection />
+      <PracticalExamSection />
     </div>
   );
 }
