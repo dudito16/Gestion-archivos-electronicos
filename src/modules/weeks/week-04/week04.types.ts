@@ -53,19 +53,6 @@ export interface FichaField {
   function: string;
 }
 
-export interface DragDropItem {
-  id: string;
-  label: string;
-  icon: string;
-  category: MetadataTypeId;
-}
-
-export interface DragDropCategory {
-  id: MetadataTypeId;
-  label: string;
-  icon: string;
-}
-
 export interface SummaryPoint {
   id: string;
   title: string;

@@ -1,8 +1,6 @@
 import type { FlowStep, TimelineStep } from "../../../types/content.types";
 import type {
   ContextElement,
-  DragDropCategory,
-  DragDropItem,
   FichaField,
   FunctionCard,
   LifecycleStageMetadata,
@@ -236,45 +234,6 @@ export const practicalCaseDocs = [
   { id: "a", label: "Documento A", fecha: "10/01/2026", productor: "Unidad A", expediente: "EXP-001", asunto: "Contratación" },
   { id: "b", label: "Documento B", fecha: "20/02/2026", productor: "Unidad B", expediente: "EXP-045", asunto: "Digitalización" },
 ];
-
-export const dragDropCategories: DragDropCategory[] = [
-  { id: "descriptivos", label: "Descriptivo", icon: "FileSearch" },
-  { id: "administrativos", label: "Administrativo", icon: "ClipboardList" },
-  { id: "estructurales", label: "Estructural", icon: "FolderTree" },
-  { id: "preservacion", label: "Preservación", icon: "ShieldCheck" },
-];
-
-export const dragDropItems: DragDropItem[] = [
-  { id: "titulo", label: "Título", icon: "FileSignature", category: "descriptivos" },
-  { id: "estado", label: "Estado", icon: "Activity", category: "administrativos" },
-  { id: "expediente", label: "Expediente (relación)", icon: "FolderTree", category: "estructurales" },
-  { id: "formato", label: "Formato", icon: "FileType", category: "preservacion" },
-  { id: "fecha-registro", label: "Fecha de registro", icon: "ClipboardList", category: "administrativos" },
-  { id: "descripcion", label: "Descripción", icon: "FileSearch", category: "descriptivos" },
-];
-
-export const ficha2Fields = ["Identificador", "Título", "Fecha", "Productor", "Tipo documental", "Expediente", "Estado", "Formato"];
-export const ficha2Suggested: Record<string, string> = {
-  Identificador: "DOC-2026-00789",
-  Título: "Informe técnico",
-  Fecha: "15/09/2026",
-  Productor: "Unidad responsable",
-  "Tipo documental": "Informe",
-  Expediente: "EXP-2026-00234",
-  Estado: "En revisión",
-  Formato: "PDF",
-};
-
-export const analysisQuestion = {
-  prompt: "¿Más metadatos significa mejor gestión?",
-  options: [
-    { id: "si", label: "Sí" },
-    { id: "no", label: "No" },
-  ],
-  correctId: "no",
-  feedback:
-    "NO NECESARIAMENTE. El objetivo no es acumular campos, sino definir información necesaria, útil, consistente y adecuada para los requisitos de gestión documental.",
-};
 
 export const workshopGuideQuestions = [
   "¿Qué información necesito?",

@@ -2,11 +2,9 @@ import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Breadcrumb } from "../../../components/common/Breadcrumb";
 import { ReadingProgressBar } from "../../../components/ui/reading-progress-bar";
-import { Activity1ClassifySection } from "./sections/Activity1ClassifySection";
-import { Activity2FichaSection } from "./sections/Activity2FichaSection";
+import { ActivitiesSection } from "./sections/ActivitiesSection";
 import { AdministrativeSection } from "./sections/AdministrativeSection";
 import { AGNExampleSection } from "./sections/AGNExampleSection";
-import { AnalysisActivitySection } from "./sections/AnalysisActivitySection";
 import { ContextSection } from "./sections/ContextSection";
 import { ControlledValuesSection } from "./sections/ControlledValuesSection";
 import { DescriptiveSection } from "./sections/DescriptiveSection";
@@ -20,6 +18,7 @@ import { MetadataConceptSection } from "./sections/MetadataConceptSection";
 import { NextWeekConnectionSection } from "./sections/NextWeekConnectionSection";
 import { ObjectivesSection } from "./sections/ObjectivesSection";
 import { PracticalCaseSection } from "./sections/PracticalCaseSection";
+import { PracticalExam4Section } from "./sections/PracticalExam4Section";
 import { PreservationSection } from "./sections/PreservationSection";
 import { PreviousWeeksConnectionSection } from "./sections/PreviousWeeksConnectionSection";
 import { QualitySection } from "./sections/QualitySection";
@@ -77,13 +76,12 @@ export function Week04ModulePage() {
       <AGNExampleSection />
       <Week2ReviewSection />
       <PracticalCaseSection />
-      <Activity1ClassifySection />
-      <Activity2FichaSection />
-      <AnalysisActivitySection />
+      <ActivitiesSection />
       <WorkshopSection />
       <FinalDiagramSection />
       <SummarySection />
       <NextWeekConnectionSection />
+      <PracticalExam4Section />
     </div>
   );
 }

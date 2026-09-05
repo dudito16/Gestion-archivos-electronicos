@@ -28,6 +28,11 @@ const Week04ModulePage = lazy(() =>
   import("./modules/weeks/week-04/Week04ModulePage").then((m) => ({ default: m.Week04ModulePage })),
 );
 
+// Same reasoning for Week 5's module (diagrams, scenario activities).
+const Week05ModulePage = lazy(() =>
+  import("./modules/weeks/week-05/Week05ModulePage").then((m) => ({ default: m.Week05ModulePage })),
+);
+
 /** Application route table. Every route renders inside the shared MainLayout shell. */
 export default function App() {
   return (
@@ -63,6 +68,14 @@ export default function App() {
           element={
             <Suspense fallback={null}>
               <Week04ModulePage />
+            </Suspense>
+          }
+        />
+        <Route
+          path="semana/5/:anchor?"
+          element={
+            <Suspense fallback={null}>
+              <Week05ModulePage />
             </Suspense>
           }
         />
