@@ -13,7 +13,7 @@ export function MainLayout() {
       <Header />
       <div className="flex flex-col lg:flex-row w-full max-w-container-max mx-auto">
         <Sidebar />
-        <main className="flex-1 w-full lg:ml-sidebar-width p-md md:p-lg lg:p-xl space-y-xl pt-24 lg:pt-8">
+        <main className="flex-1 w-full min-w-0 overflow-x-hidden lg:ml-sidebar-width p-md md:p-lg lg:p-xl space-y-xl pt-24 lg:pt-8">
           <AnimatePresence mode="wait">
             <motion.div
               key={location.pathname}

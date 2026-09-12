@@ -1,5 +1,6 @@
 import {
   Activity,
+  AlertCircle,
   Archive,
   ArrowRightLeft,
   AudioLines,
@@ -26,9 +27,11 @@ import {
   Image,
   Inbox,
   KeyRound,
+  Landmark,
   LayoutGrid,
   Link2,
   Mail,
+  MousePointerClick,
   Radar,
   ReceiptText,
   Route,
@@ -52,6 +55,7 @@ import {
  */
 const iconMap: Record<string, LucideIcon> = {
   Activity,
+  AlertCircle,
   Archive,
   ArrowRightLeft,
   AudioLines,
@@ -78,9 +82,11 @@ const iconMap: Record<string, LucideIcon> = {
   Image,
   Inbox,
   KeyRound,
+  Landmark,
   LayoutGrid,
   Link2,
   Mail,
+  MousePointerClick,
   Radar,
   ReceiptText,
   Route,

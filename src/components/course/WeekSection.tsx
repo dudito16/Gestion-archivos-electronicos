@@ -14,7 +14,7 @@ interface WeekSectionProps {
 
 /** One collapsible week in the sidebar tree: a toggleable header over its `LessonNavigation`. */
 export function WeekSection({ week, isCurrent }: WeekSectionProps) {
-  const [open, setOpen] = useState(isCurrent || week.status === "active");
+  const [open, setOpen] = useState(isCurrent);
 
   useEffect(() => {
     if (isCurrent) setOpen(true);

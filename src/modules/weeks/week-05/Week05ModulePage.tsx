@@ -13,12 +13,14 @@ import { MaintenanceSection } from "./sections/MaintenanceSection";
 import { NextWeekConnectionSection } from "./sections/NextWeekConnectionSection";
 import { ObjectivesSection } from "./sections/ObjectivesSection";
 import { PracticalCaseSection } from "./sections/PracticalCaseSection";
+import { PracticalExam5Section } from "./sections/PracticalExam5Section";
 import { ProblemSection } from "./sections/ProblemSection";
 import { RecordsManagementSection } from "./sections/RecordsManagementSection";
 import { RegistrationSection } from "./sections/RegistrationSection";
 import { ReliabilitySection } from "./sections/ReliabilitySection";
 import { RequirementsOverviewSection } from "./sections/RequirementsOverviewSection";
 import { SummarySection } from "./sections/SummarySection";
+import { TallerSection } from "./sections/TallerSection";
 
 /** Week 5 interactive module — same long-form, scroll-driven pattern as Weeks 1-4. */
 export function Week05ModulePage() {
@@ -54,8 +56,10 @@ export function Week05ModulePage() {
       <DocumentFlowSection />
       <PracticalCaseSection />
       <DecisionSimulatorSection />
+      <TallerSection />
       <SummarySection />
       <NextWeekConnectionSection />
+      <PracticalExam5Section />
     </div>
   );
 }
