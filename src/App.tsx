@@ -38,6 +38,11 @@ const Week06ModulePage = lazy(() =>
   import("./modules/weeks/week-06/Week06ModulePage").then((m) => ({ default: m.Week06ModulePage })),
 );
 
+// Proyecto Integrador — closes Unidad I (Semanas 1-6), same reasoning: diagrams, timelines, interactive steps.
+const IntegrativeProjectPage = lazy(() =>
+  import("./modules/projects/integrative-project/IntegrativeProjectPage").then((m) => ({ default: m.IntegrativeProjectPage })),
+);
+
 /** Application route table. Every route renders inside the shared MainLayout shell. */
 export default function App() {
   return (
@@ -89,6 +94,14 @@ export default function App() {
           element={
             <Suspense fallback={null}>
               <Week06ModulePage />
+            </Suspense>
+          }
+        />
+        <Route
+          path="proyecto-integrador/:anchor?"
+          element={
+            <Suspense fallback={null}>
+              <IntegrativeProjectPage />
             </Suspense>
           }
         />

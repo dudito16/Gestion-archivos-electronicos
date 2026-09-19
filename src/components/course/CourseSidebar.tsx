@@ -1,4 +1,6 @@
+import { Fragment } from "react";
 import { useLocation } from "react-router-dom";
+import { IntegrativeProjectNavLink } from "./IntegrativeProjectNavLink";
 import { UnitSection } from "./UnitSection";
 import { useCourseData } from "../../hooks/useCourseData";
 
@@ -13,12 +15,14 @@ export function CourseSidebar() {
   return (
     <nav className="flex flex-col py-xs">
       {units.map((unit) => (
-        <UnitSection
-          key={unit.id}
-          unit={unit}
-          weeks={weeks.filter((week) => week.unit === unit.id)}
-          currentWeekNumber={currentWeekNumber}
-        />
+        <Fragment key={unit.id}>
+          <UnitSection
+            unit={unit}
+            weeks={weeks.filter((week) => week.unit === unit.id)}
+            currentWeekNumber={currentWeekNumber}
+          />
+          {unit.id === 1 && <IntegrativeProjectNavLink />}
+        </Fragment>
       ))}
     </nav>
   );
