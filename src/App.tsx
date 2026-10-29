@@ -58,6 +58,16 @@ const Week11ModulePage = lazy(() =>
   import("./modules/weeks/week-11/Week11ModulePage").then((m) => ({ default: m.Week11ModulePage })),
 );
 
+// Same reasoning for Week 12's module (diagrams, activities, workshop, graded practice).
+const Week12ModulePage = lazy(() =>
+  import("./modules/weeks/week-12/Week12ModulePage").then((m) => ({ default: m.Week12ModulePage })),
+);
+
+// Same reasoning for Week 13's module (diagrams, activities, workshop, graded practice).
+const Week13ModulePage = lazy(() =>
+  import("./modules/weeks/week-13/Week13ModulePage").then((m) => ({ default: m.Week13ModulePage })),
+);
+
 // Proyecto Integrador — closes Unidad I (Semanas 1-6), same reasoning: diagrams, timelines, interactive steps.
 const IntegrativeProjectPage = lazy(() =>
   import("./modules/projects/integrative-project/IntegrativeProjectPage").then((m) => ({ default: m.IntegrativeProjectPage })),
@@ -146,6 +156,22 @@ export default function App() {
           element={
             <Suspense fallback={null}>
               <Week11ModulePage />
+            </Suspense>
+          }
+        />
+        <Route
+          path="semana/12/:anchor?"
+          element={
+            <Suspense fallback={null}>
+              <Week12ModulePage />
+            </Suspense>
+          }
+        />
+        <Route
+          path="semana/13/:anchor?"
+          element={
+            <Suspense fallback={null}>
+              <Week13ModulePage />
             </Suspense>
           }
         />
