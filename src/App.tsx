@@ -73,6 +73,14 @@ const Week14ModulePage = lazy(() =>
   import("./modules/weeks/week-14/Week14ModulePage").then((m) => ({ default: m.Week14ModulePage })),
 );
 
+// Weeks 16 and 17 — one two-week group project (directiva institucional de preservación digital).
+const Week16ModulePage = lazy(() =>
+  import("./modules/weeks/week-16/Week16ModulePage").then((m) => ({ default: m.Week16ModulePage })),
+);
+const Week17ModulePage = lazy(() =>
+  import("./modules/weeks/week-17/Week17ModulePage").then((m) => ({ default: m.Week17ModulePage })),
+);
+
 // Proyecto Integrador — closes Unidad I (Semanas 1-6), same reasoning: diagrams, timelines, interactive steps.
 const IntegrativeProjectPage = lazy(() =>
   import("./modules/projects/integrative-project/IntegrativeProjectPage").then((m) => ({ default: m.IntegrativeProjectPage })),
@@ -185,6 +193,22 @@ export default function App() {
           element={
             <Suspense fallback={null}>
               <Week14ModulePage />
+            </Suspense>
+          }
+        />
+        <Route
+          path="semana/16/:anchor?"
+          element={
+            <Suspense fallback={null}>
+              <Week16ModulePage />
+            </Suspense>
+          }
+        />
+        <Route
+          path="semana/17/:anchor?"
+          element={
+            <Suspense fallback={null}>
+              <Week17ModulePage />
             </Suspense>
           }
         />
